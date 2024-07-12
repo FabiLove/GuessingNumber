@@ -1,0 +1,72 @@
+.again-btn-child {
+  height: 100px;
+  width: 341px;
+  position: relative;
+  background-color: var(--color-white);
+  display: none;
+  max-width: 100%;
+}
+.again {
+  position: relative;
+  display: inline-block;
+  min-width: 114px;
+  z-index: 1;
+}
+.again-btn {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-9xl) var(--padding-33xl) var(--padding-9xl)
+    var(--padding-34xl);
+  background-color: var(--color-white);
+  overflow: hidden;
+  flex-direction: row;
+
+  font-size: var(--font-size-17xl);
+  color: var(--color-black);
+  font-family: var(--font-inter);
+}
+.again-btn:hover {
+  background-color: var(--color-gainsboro);
+}
+
+.between-1-and {
+  position: relative;
+  display: inline-block;
+  color: var(--color-white);
+  max-width: 100%;
+}
+.again-btn-parent,
+.desktop-1-inner {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  max-width: 100%;
+}
+.again-btn-parent {
+  width: 1301px;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+}
+.desktop-1-inner {
+  align-self: stretch;
+  justify-content: center;
+  text-align: left;
+  font-size: var(--font-size-17xl);
+  color: var(--color-black);
+  font-family: var(--font-inter);
+}
+@media screen and (max-width: 925px) {
+  .again,
+  .between-1-and {
+    font-size: var(--font-size-10xl);
+  }
+  .again-btn-parent {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 450px) {
+  .again,
+  .between-1-and {
+    font-size: var(--font-size-3xl);
+  }
+}

@@ -1,0 +1,94 @@
+.guess-my-number {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  font-weight: 700;
+  font-family: inherit;
+}
+.guess-my-number-wrapper {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 var(--padding-xl);
+}
+.frame-child,
+.result-child {
+  background-color: var(--color-white);
+}
+.result-child {
+  position: absolute;
+  top: 68px;
+  left: 0;
+  width: 1816px;
+  height: 24px;
+}
+.frame-child {
+  height: 160px;
+  width: 230px;
+  position: relative;
+  display: none;
+}
+.h2 {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  font-weight: 700;
+  font-family: inherit;
+  display: inline-block;
+  min-width: 36px;
+  z-index: 2;
+}
+.rectangle-parent {
+  position: absolute;
+  top: 0;
+  left: 793px;
+  background-color: var(--color-white);
+  width: 230px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: var(--padding-22xl) var(--padding-xl) var(--padding-23xl);
+  box-sizing: border-box;
+  z-index: 1;
+}
+.result {
+  align-self: stretch;
+  height: 159px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  color: var(--color-black);
+}
+.frame-parent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 0 var(--padding-22xl);
+  gap: var(--gap-32xl);
+  text-align: left;
+  font-size: var(--font-size-45xl);
+  color: var(--color-white);
+  font-family: var(--font-inter);
+}
+@media screen and (max-width: 925px) {
+  .guess-my-number,
+  .h2 {
+    font-size: var(--font-size-32xl);
+  }
+}
+@media screen and (max-width: 700px) {
+  .frame-parent {
+    gap: var(--gap-6xl);
+  }
+}
+@media screen and (max-width: 450px) {
+  .guess-my-number,
+  .h2 {
+    font-size: var(--font-size-19xl);
+  }
+}

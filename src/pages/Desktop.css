@@ -1,0 +1,28 @@
+.desktop-1 {
+  width: 100%;
+  position: relative;
+  background-color: #505050;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: 127.5px 24px 200.5px;
+  box-sizing: border-box;
+  gap: 76px;
+  line-height: normal;
+  letter-spacing: normal;
+}
+.win {
+  background-color: #42972a;
+}
+@media screen and (max-width: 925px) {
+  .desktop-1 {
+    gap: 38px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .desktop-1 {
+    gap: 19px;
+  }
+}
